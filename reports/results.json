@@ -1,0 +1,338 @@
+{
+  "quality": {
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "duplicate_week_center_meal": 0,
+    "checkout_above_base": 116101,
+    "checkout_above_base_gt20pct": 233,
+    "orders_iqr_outliers": 32937,
+    "orders_above_p99_9": 457,
+    "center_meal_pairs": 3597,
+    "pairs_with_missing_weeks": 2129,
+    "missing_pair_weeks": 40548,
+    "min_num_orders": 13
+  },
+  "kpi": {
+    "total_orders": 119557485,
+    "weeks": 145,
+    "avg_weekly_orders": 824534.3793103448,
+    "total_revenue": 31922771040.11,
+    "avg_discount_pct": 0.05719500266215987,
+    "share_rows_email": 0.08115247465764827,
+    "share_rows_home": 0.10919990888143197,
+    "share_rows_any_promo": 0.14822975897386473,
+    "centers": 77,
+    "meals": 51
+  },
+  "q1": {
+    "cv_weekly_total": 0.15241364128927698,
+    "spearman_week_trend": 0.16974885844748858,
+    "p_trend": 0.041231574934276406,
+    "first26_avg": 771472.6153846154,
+    "last26_avg": 816146.9615384615,
+    "change_first_last": 0.057907883265012394,
+    "median_abs_wow": 0.08556004818207374,
+    "low_week": 62,
+    "low_orders": 380065,
+    "high_week": 48,
+    "high_orders": 1303457,
+    "weeks_above_1m": 13
+  },
+  "q2": {
+    "n_categories": 14,
+    "n_cat80": 5,
+    "cat80": [
+      "Beverages",
+      "Rice Bowl",
+      "Sandwich",
+      "Salad",
+      "Pizza"
+    ],
+    "top_category": "Beverages",
+    "top_category_share": 0.33858628759211523,
+    "n_meals": 51,
+    "n_meal80": 22,
+    "top10_meal_share": 0.5366417167440416,
+    "top_meal": 2290,
+    "top_meal_cat": "Rice Bowl",
+    "top_meal_share": 0.08172054639657232,
+    "cuisine_share": {
+      "Italian": 0.36946939792184486,
+      "Thai": 0.27332182506181024,
+      "Indian": 0.21573341058487472,
+      "Continental": 0.14147536643147018
+    }
+  },
+  "q3": {
+    "top_center": 13,
+    "top_center_weekly": 29631.344827586207,
+    "median_center_weekly": 9304.655172413793,
+    "top10_center_share": 0.2593218027829145,
+    "kruskal_H": 13.205164154490944,
+    "kruskal_p": 0.0013568599931625112,
+    "kruskal_per_area_p": 0.5743286976713644,
+    "spearman_area_orders": 0.6837015083254845,
+    "p_area": 7.25218405980046e-12,
+    "by_type": [
+      {
+        "center_type": "TYPE_A",
+        "centers": 43,
+        "median_weekly": 10007.213793103449,
+        "mean_weekly": 11063.114194065758,
+        "median_op_area": 4.0,
+        "median_per_area": 2594.686118479222
+      },
+      {
+        "center_type": "TYPE_B",
+        "centers": 15,
+        "median_weekly": 13148.51724137931,
+        "mean_weekly": 13982.632701149425,
+        "median_op_area": 4.4,
+        "median_per_area": 2629.703448275862
+      },
+      {
+        "center_type": "TYPE_C",
+        "centers": 19,
+        "median_weekly": 7006.3448275862065,
+        "mean_weekly": 7471.105263157895,
+        "median_op_area": 3.0,
+        "median_per_area": 2284.55
+      }
+    ]
+  },
+  "q4": {
+    "tests": {
+      "email": {
+        "label": "Email promotion",
+        "pairs_tested": 2482,
+        "share_sig": 0.8879935535858179,
+        "share_sig_positive": 0.8879935535858179,
+        "median_pair_uplift": 1.6478445658773528,
+        "pooled_median_ratio_promo": 2.9065420560747666,
+        "pooled_median_ratio_base": 1.0,
+        "pooled_uplift": 1.9065420560747666,
+        "pooled_mw_p": 0.0,
+        "rank_biserial": 0.7664276924551598
+      },
+      "home": {
+        "label": "Homepage feature",
+        "pairs_tested": 2432,
+        "share_sig": 0.8651315789473685,
+        "share_sig_positive": 0.8643092105263158,
+        "median_pair_uplift": 1.364077031778895,
+        "pooled_median_ratio_promo": 2.126315789473684,
+        "pooled_median_ratio_base": 1.0,
+        "pooled_uplift": 1.1263157894736842,
+        "pooled_mw_p": 0.0,
+        "rank_biserial": 0.6017576300697411
+      },
+      "any_promo": {
+        "label": "Any promotion",
+        "pairs_tested": 2873,
+        "share_sig": 0.8785241907413853,
+        "share_sig_positive": 0.8778280542986425,
+        "median_pair_uplift": 1.2378190255220418,
+        "pooled_median_ratio_promo": 2.1345092126560385,
+        "pooled_median_ratio_base": 1.0,
+        "pooled_uplift": 1.1345092126560385,
+        "pooled_mw_p": 0.0,
+        "rank_biserial": 0.639607028627375
+      }
+    },
+    "fixed_effects": [
+      {
+        "term": "email",
+        "coef": 0.5456667770300748,
+        "cluster_se": 0.006972760328145264,
+        "pct_effect": 0.7257586950901076,
+        "ci_low": 0.7023338572937614,
+        "ci_high": 0.7495058686159786
+      },
+      {
+        "term": "home",
+        "coef": 0.4168860304855957,
+        "cluster_se": 0.006640376744387762,
+        "pct_effect": 0.5172295851619639,
+        "ci_low": 0.4976105810687059,
+        "ci_high": 0.5371056022107104
+      },
+      {
+        "term": "discount_pct",
+        "coef": 1.5402243718448339,
+        "cluster_se": 0.027564070105555654,
+        "pct_effect": 0.16651705984328813,
+        "ci_low": 0.1602318773900011,
+        "ci_high": 0.17283629024788638
+      }
+    ]
+  },
+  "q5": {
+    "spearman_pooled": 0.12181341116384893,
+    "p_pooled": 0.0,
+    "spearman_no_promo": 0.022588912918887902,
+    "spearman_rel_orders": 0.2855842156038393,
+    "within_pair_median_rho": 0.26004723733777746,
+    "within_pair_share_positive": 0.890607424071991,
+    "pairs": 3556,
+    "band_median_no_promo": {
+      "\u22640%": 0.9966329966329966,
+      "0\u20135%": 0.9962962962962963,
+      "5\u201310%": 0.9333333333333333,
+      "10\u201320%": 1.1646167270686303,
+      "20\u201330%": 1.2777777777777777,
+      ">30%": 1.3095238095238095
+    },
+    "band_median_promo": {
+      "\u22640%": 1.2545454545454546,
+      "0\u20135%": 1.3796296296296295,
+      "5\u201310%": 1.6663293530324497,
+      "10\u201320%": 1.9285714285714286,
+      "20\u201330%": 2.8,
+      ">30%": 4.074074074074074
+    }
+  },
+  "q6": {
+    "median_meal_cv": 0.4597840750632452,
+    "median_center_meal_cv": 0.6315386325847394,
+    "n_high_vol_volatile": 14,
+    "high_vol_volatile_meals": [
+      {
+        "meal_id": 2290,
+        "category": "Rice Bowl",
+        "cuisine": "Indian",
+        "mean": 67381.4,
+        "cv": 0.9,
+        "safety_units_95": 100059.162
+      },
+      {
+        "meal_id": 1971,
+        "category": "Sandwich",
+        "cuisine": "Italian",
+        "mean": 39507.724,
+        "cv": 1.104,
+        "safety_units_95": 71949.09
+      },
+      {
+        "meal_id": 1754,
+        "category": "Sandwich",
+        "cuisine": "Italian",
+        "mean": 47021.097,
+        "cv": 0.887,
+        "safety_units_95": 68801.735
+      },
+      {
+        "meal_id": 2490,
+        "category": "Salad",
+        "cuisine": "Italian",
+        "mean": 29673.0,
+        "cv": 0.942,
+        "safety_units_95": 46132.885
+      },
+      {
+        "meal_id": 1727,
+        "category": "Rice Bowl",
+        "cuisine": "Indian",
+        "mean": 32661.979,
+        "cv": 0.804,
+        "safety_units_95": 43353.155
+      },
+      {
+        "meal_id": 1109,
+        "category": "Rice Bowl",
+        "cuisine": "Indian",
+        "mean": 43915.676,
+        "cv": 0.561,
+        "safety_units_95": 40623.329
+      },
+      {
+        "meal_id": 2826,
+        "category": "Sandwich",
+        "cuisine": "Italian",
+        "mean": 35104.159,
+        "cv": 0.486,
+        "safety_units_95": 28147.413
+      },
+      {
+        "meal_id": 1962,
+        "category": "Pizza",
+        "cuisine": "Continental",
+        "mean": 22315.724,
+        "cv": 0.684,
+        "safety_units_95": 25192.254
+      },
+      {
+        "meal_id": 2569,
+        "category": "Salad",
+        "cuisine": "Italian",
+        "mean": 25848.054,
+        "cv": 0.482,
+        "safety_units_95": 20556.944
+      },
+      {
+        "meal_id": 2581,
+        "category": "Pizza",
+        "cuisine": "Continental",
+        "mean": 16544.828,
+        "cv": 0.721,
+        "safety_units_95": 19691.514
+      },
+      {
+        "meal_id": 1558,
+        "category": "Pizza",
+        "cuisine": "Continental",
+        "mean": 12061.655,
+        "cv": 0.778,
+        "safety_units_95": 15482.134
+      },
+      {
+        "meal_id": 2322,
+        "category": "Beverages",
+        "cuisine": "Continental",
+        "mean": 15849.8,
+        "cv": 0.548,
+        "safety_units_95": 14318.697
+      },
+      {
+        "meal_id": 1230,
+        "category": "Beverages",
+        "cuisine": "Continental",
+        "mean": 12717.028,
+        "cv": 0.518,
+        "safety_units_95": 10876.283
+      },
+      {
+        "meal_id": 1207,
+        "category": "Beverages",
+        "cuisine": "Continental",
+        "mean": 12419.697,
+        "cv": 0.516,
+        "safety_units_95": 10569.984
+      }
+    ],
+    "share_orders_high_vol_volatile": 0.4924922517398221,
+    "segment_counts": {
+      "High volume / volatile": 14,
+      "Low volume / stable": 13,
+      "High volume / stable": 12,
+      "Low volume / volatile": 12
+    }
+  },
+  "ml": {
+    "mae": {
+      "Random Forest (10-wk horizon)": 69.84155768782212,
+      "Random Forest, no level correction": 68.27072573846273,
+      "Linear Regression on log orders": 206.78402979135845,
+      "Naive: week 135 carried forward": 110.31814996496146,
+      "Naive: previous week actual (lag-1, optimistic)": 79.31144693945949
+    },
+    "rf_vs_naive_last": 0.3669078233273062,
+    "rf_vs_lag1": 0.11940129221026552,
+    "weekly_total_mape_rf": 0.053438980585379756,
+    "weekly_total_mape_rf_raw": 0.07498793181465975,
+    "total_bias_rf": 0.043529618791018576,
+    "smear": 1.1297554501891724,
+    "weekly_total_mape_naive": 0.05969778205280581,
+    "holdout_rows": 32821,
+    "forecast_total_146_155": 8506943.0
+  }
+}
